@@ -1,0 +1,231 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --font-family: "Karla", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+  max-width: 1440px;
+  position: relative;
+  padding: 0px;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  height: 100%;
+  display: block;
+}
+
+main {
+  max-width: 311px;
+  margin: 10% auto;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+}
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 635px;
+  }
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+}
+main .container .our-community {
+  max-width: 263px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  main .container .our-community {
+    max-width: 555px;
+  }
+}
+main .container .our-community h2 {
+  color: #2AB3B1;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+@media screen and (min-width: 1200px) {
+  main .container .our-community h2 {
+    font-size: 24px;
+    letter-spacing: -0.3px;
+  }
+}
+main .container .our-community p {
+  color: #C0DF33;
+  font-family: Karla;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.187px;
+}
+@media screen and (min-width: 1200px) {
+  main .container .our-community p {
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: -0.225px;
+  }
+}
+main .container .our-community .description {
+  color: #9AA7BE;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.175px;
+}
+@media screen and (min-width: 1200px) {
+  main .container .our-community .description {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+  }
+}
+main .container .about-us {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  main .container .about-us {
+    flex-direction: row;
+  }
+}
+main .container .about-us .monthly-data {
+  background: #2AB3B1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+}
+main .container .about-us .monthly-data h4 {
+  color: #FFF;
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.225px;
+}
+main .container .about-us .monthly-data .monthly-price {
+  color: #FFF;
+  font-family: Karla;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  opacity: 1 !important;
+}
+main .container .about-us .monthly-data .monthly-price span {
+  color: #FFF;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  opacity: 0.5;
+}
+main .container .about-us .monthly-data p {
+  color: #FFF;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+}
+main .container .about-us .monthly-data button {
+  width: 263px;
+  height: 48px;
+  border-radius: 5px;
+  background: #C0DF33;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+main .container .about-us .why-us {
+  background: #2AB3B1;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  main .container .about-us .why-us {
+    padding: 38px;
+  }
+}
+main .container .about-us .why-us h4 {
+  color: #FFF;
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.225px;
+}
+main .container .about-us .why-us .description {
+  max-width: 238px;
+  color: #FFF;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.175px;
+}/*# sourceMappingURL=style.css.map */
